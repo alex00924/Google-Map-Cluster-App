@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/last_layout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/task_photo_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp">
+
+                        <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/img_progress_bar"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerInParent="true"
+                            android:theme="@style/AppTheme" />
+
+                        <ImageView
+                            android:id="@+id/task_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:scaleType="centerCrop" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_below="@id/task_photo_layout"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_minus45sdp"
+                        android:layout_marginRight="@dimen/_15sdp">
+
+                        <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerInParent="true"
+                            android:theme="@style/AppTheme" />
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_profile"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_gravity="center_horizontal"
+                            app:civ_border_color="@color/profile_border_color"
+                            app:civ_border_width="@dimen/_1sdp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/task_photo_layout"
+                        android:layout_marginLeft="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/organizer_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_14sdp"
+                                android:layout_height="@dimen/_14sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/name" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/creator_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/task_img"
+                                android:textColor="@color/base_header_color"
+                                android:textSize="@dimen/_12ssp"
+                                app:customFont="Helvetica_light.ttf" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/company_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_14sdp"
+                                android:layout_height="@dimen/_14sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/company" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/company_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:textColor="@color/base_header_color"
+                                android:textSize="@dimen/_12ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_13sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/chat" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/message_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/task_img"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_12ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_13sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/caleneder" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="@string/created_on"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_11ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/created_date_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/cal_image"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_11ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_13sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/caleneder" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="@string/start"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_11ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/date_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/cal_image"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_11ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_13sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/caleneder" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="@string/end"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_11ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/end_date_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/cal_image"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_11ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_13sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/caleneder" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:text="@string/category"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_11ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/category_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/cal_image"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_11ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/task_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/_5sdp">
+
+                            <ImageView
+                                android:layout_width="@dimen/_13sdp"
+                                android:layout_height="@dimen/_13sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/location" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/loc_image"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_11ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+                        </LinearLayout>
+
+                        <com.rol.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/about"
+                            android:textColor="@color/base_header_color"
+                            android:textSize="@dimen/_14ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+
+                        <com.rol.widgets.CustomTextView
+                            android:id="@+id/description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:textColor="@color/radio_text_color"
+                            android:textSize="@dimen/_11ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+                        <LinearLayout
+                            android:id="@+id/applied_halper_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/help" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/task_img"
+                                android:text="@string/applied_helper"
+                                android:textColor="@color/base_header_color"
+                                android:textSize="@dimen/_13ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+                        </LinearLayout>
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/applied_helper_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/help" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_toRightOf="@id/task_img"
+                                android:text="@string/confirm_helper"
+                                android:textColor="@color/base_header_color"
+                                android:textSize="@dimen/_13ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:textColor="@color/radio_text_color"
+                                android:textSize="@dimen/_12ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+
+                        </LinearLayout>
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/confirm_helper_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_85sdp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/task_calender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/base_bottom_color">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+
+                        <ImageView
+                            android:id="@+id/add_cal_img"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/add_cal" />
+
+                        <com.rol.widgets.CustomTextView
+                            android:id="@+id/add_to_calendar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@id/add_cal_img"
+                            android:text="@string/add_to_calendar"
+                            android:textColor="@color/invite_frd_text_color"
+                            android:textSize="@dimen/_10ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+                        <com.rol.widgets.CustomTextView
+                            android:id="@+id/selected_date_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/add_to_calendar"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_toRightOf="@id/add_cal_img"
+                            android:textColor="@color/invite_frd_text_color"
+                            android:textSize="@dimen/_10ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@mipmap/angle" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/facebook_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/base_bottom_color">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+
+                        <ImageView
+                            android:id="@+id/fb_img"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/fb_logo" />
+
+                        <com.rol.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@id/fb_img"
+                            android:text="@string/share_on_fb"
+                            android:textColor="@color/invite_frd_text_color"
+                            android:textSize="@dimen/_10ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/_3sdp"
+                            android:src="@mipmap/angle" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <com.facebook.share.widget.ShareButton
+                    android:id="@+id/fb_share_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <com.rol.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/photos"
+                            android:textColor="@color/base_header_color"
+                            android:textSize="@dimen/_12ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+                        <LinearLayout
+                            android:id="@+id/addmore_btn_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:src="@mipmap/plus_blue" />
+
+                            <com.rol.widgets.CustomTextView
+                                android:id="@+id/add_more_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/add_more"
+                                android:textColor="@color/base_header_color"
+                                android:textSize="@dimen/_10ssp"
+                                app:customFont="Helvetica_light.ttf" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/photos_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.rol.widgets.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/base_bottom_color"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="@string/comments"
+                        android:textColor="@color/base_header_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:customFont="Helvetica_light.ttf" />
+
+
+                    <com.rol.utils.NonScrollListView
+                        android:id="@+id/chat_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_300sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:divider="@null"
+                        android:focusable="false">
+
+                    </com.rol.utils.NonScrollListView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_bottom_color"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_5sdp">
+
+
+                    <com.rol.widgets.CustomEditText
+                        android:id="@+id/write_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/message_bg"
+                        android:ellipsize="end"
+                        android:hint="@string/write_comment"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:textColor="@color/setting_text_color"
+                        android:textColorHint="@color/setting_text_color"
+                        android:textSize="@dimen/_11ssp"
+                        app:customFont="Helvetica_light.ttf" />
+
+
+                    <com.rol.widgets.CustomButton
+                        android:id="@+id/send_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="3.5"
+                        android:background="@mipmap/task_btn"
+                        android:gravity="center"
+                        android:text="@string/send"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11ssp"
+                        app:customFont="Helvetica_light.ttf" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/last_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/last_one_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_13sdp"
+                        android:layout_height="@dimen/_13sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/edit_ic" />
+
+                    <com.rol.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/edit"
+                        android:textColor="@color/base_header_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:customFont="Helvetica_light.ttf" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_13sdp"
+                        android:layout_height="@dimen/_13sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/delete" />
+
+                    <com.rol.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/delete"
+                        android:textColor="@color/base_header_color"
+                        android:textSize="@dimen/_12ssp"
+                        app:customFont="Helvetica_light.ttf" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/last_one_layout"
+            android:background="@color/base_line_color"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/last_two_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/last_one_layout"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp">
+
+
+            <LinearLayout
+                android:id="@+id/invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/user_add" />
+
+                <com.rol.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/invite"
+                    android:textColor="@color/base_header_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/fav" />
+
+                <com.rol.widgets.CustomTextView
+                    android:id="@+id/favText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/favorite"
+                    android:textColor="@color/base_header_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/edit" />
+
+                <com.rol.widgets.CustomTextView
+                    android:id="@+id/apply_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/apply"
+                    android:textColor="@color/base_header_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/edit" />
+
+                <com.rol.widgets.CustomTextView
+                    android:id="@+id/cancel_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/base_header_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Helvetica_light.ttf" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/task_photo_layout_new"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/white_smoke"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:id="@+id/task_photo_new"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:scaleType="centerCrop" />
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/task_name_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:textColor="@color/black"
+            app:customFont="Helvetica_light.ttf" />
+
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/task_description_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:textColor="@color/black"
+            app:customFont="Helvetica_light.ttf" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:layout_marginRight="@dimen/_30sdp"
+    android:background="@drawable/dialog_bg"
+
+    android:orientation="vertical">
+
+    <com.rol.widgets.CustomTextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="@string/delete_task_text"
+        android:textColor="@color/base_header_color"
+        android:textSize="@dimen/_13ssp"
+        app:customFont="Helvetica_light.ttf" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+
+        <com.rol.widgets.CustomButton
+            android:id="@+id/yes_btn"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@mipmap/btn_bg"
+            android:gravity="center"
+            android:text="@string/yes_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:customFontButton="Helvetica_light.ttf" />
+
+        <com.rol.widgets.CustomButton
+            android:id="@+id/no_btn"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@mipmap/btn_bg"
+            android:gravity="center"
+            android:text="@string/no_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:customFontButton="Helvetica_light.ttf" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,320 @@
+<resources>
+    <string name="app_name">Rol</string>
+
+    <string name="gpslocation">Turn on the GPS Location</string>
+
+    <!-- splash screen  -->
+    <string name="app_text">App Name</string>
+    <string name="facebook_app_id">2121524141450577</string>
+    <string name="fb_login_protocol_scheme">fb2121524141450577</string>
+
+
+    <!-- register  -->
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_pass">Confirm Password</string>
+
+    <!-- login  -->
+    <string name="email_add">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="login">Login</string>
+
+    <!-- home  -->
+    <string name="registration">Registration</string>
+    <string name="or_text">Or</string>
+    <string name="login_with_fb">Login With Facebook</string>
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="and_text">and</string>
+    <string name="privacy_policy_text">Privacy Policy</string>
+
+    <!-- add company  -->
+    <string name="add_company">Add Organisation</string>
+    <string name="name">Name</string>
+    <string name="select_category">Select Category</string>
+    <string name="location">Location</string>
+    <string name="website_optional">Website*</string>
+    <string name="website">Website</string>
+    <string name="description">Description</string>
+    <string name="submit">Submit</string>
+
+    <!-- add task  -->
+    <string name="add_task">Add Task</string>
+    <string name="title">Title</string>
+    <string name="select_company">Select Organisation</string>
+    <string name="select_date_time">Select Start Date and Time</string>
+    <string name="select_end_date_time">Select End Date and Time</string>
+    <string name="how_long_takes">How long it takes</string>
+    <string name="visible_for">Visible For:</string>
+    <string name="everyone">Everyone</string>
+    <string name="invited_friends">Invited Friends</string>
+    <string name="nobody">Nobody</string>
+    <string name="applied">Applied</string>
+    <string name="helper">Helper</string>
+    <string name="applied_helper">Applied Helpers</string>
+    <string name="confirm_helper">Confirmed Helpers</string>
+    <string name="max_no_helper">Max.No. of Helper</string>
+    <string name="invite_friend">Invite Friend</string>
+    <string name="save">Save</string>
+    <string name="confirm_helper_text">Do I have to confirm the Helpers‭?</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+
+    <!-- select category  -->
+    <string name="select_cat">Select Categories</string>
+    <string name="category_name">Sport</string>
+
+    <!-- company detail -->
+    <string name="company_name">Company Name</string>
+    <string name="website_link">Website Link</string>
+    <string name="company_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.\n \n when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+    <string name="upcoming_task">Upcoming Tasks</string>
+    <string name="completed_task">Completed Tasks</string>
+    <string name="task_name">Task Name</string>
+    <string name="date_time">15/05/2018,2:00 PM</string>
+    <string name="location_here">Location Here</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="total">3/5</string>
+    <string name="distance_text">1 Km</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+
+    <!-- company  -->
+    <string name="company">Organisations</string>
+    <string name="list">List</string>
+    <string name="map">Map</string>
+    <string name="my">My</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.</string>
+    <string name="favourited">Favourited</string>
+
+    <!-- select company  -->
+    <string name="search_company">Search Organisations</string>
+
+    <!-- friend profile  -->
+    <string name="female">Female</string>
+    <string name="age_text">20 Year</string>
+    <string name="total_hours">Total Hours:</string>
+    <string name="hours_text">100</string>
+    <string name="remove_friend">Remove Friend</string>
+    <string name="send_msg">Send Message</string>
+    <string name="about_me">About Me</string>
+    <string name="friends_number_text">14</string>
+    <string name="friends">Friends</string>
+    <string name="block_this_user">Block This User</string>
+    <string name="unblock_user">Unblock This User</string>
+    <string name="add_friend">Add Friend</string>
+
+
+    <!-- friend  -->
+    <string name="discover">Discover</string>
+    <string name="request">Requests</string>
+    <string name="facebook">Facebook</string>
+    <string name="my_friends">My Friends</string>
+    <string name="user_name_email">User Name/Email</string>
+    <string name="user_name">User Name</string>
+    <string name="add">Add</string>
+    <string name="invite_your_friends">Invite Your Friend</string>
+    <string name="invite">Invite</string>
+    <string name="pending">Pending</string>
+    <string name="friend">Friend</string>
+
+    <string name="remove_favorite">Unfavourite</string>
+
+
+    <string name="not_connected">Not Connected ?</string>
+    <string name="connect_with_fb">Connect With Facebook</string>
+    <string name="connect_fb_description">Connect with facebook and see your friends already registerd in (app name)</string>
+
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+
+
+    <!-- general settings  -->
+    <string name="general_settings">General Settings</string>
+    <string name="notification">Notification</string>
+    <string name="notification_all">Notifications</string>
+    <string name="application_confirmed">Application Confirmed</string>
+    <string name="new_friend_request">New Friend Request</string>
+    <string name="friend_request_confirmed">Friend Request Confirmed</string>
+    <string name="new_message">New Message</string>
+    <string name="new_recommended_task">New Recommended Task</string>
+    <string name="task_cancelled">Task Cancelled</string>
+    <string name="new_task_favorited_profile">New Task of Favourited Profile</string>
+    <string name="privacy_settings">Privacy Settings</string>
+    <string name="my_picture">My Picture</string>
+    <string name="my_task">My Tasks</string>
+    <string name="profile_info">Profile Information</string>
+    <string name="my_friend_list">My Friend List</string>
+    <string name="me">Me</string>
+    <string name="help">Help</string>
+    <string name="feedback">Feedback</string>
+    <string name="terms_condition_setting">Terms &amp; Condition</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="imprint">Imprint</string>
+    <string name="rate_review_app">Rate and review the app</string>
+    <string name="delete_profile">Delete Profile</string>
+    <string name="app_version">App Version 1.0</string>
+
+
+    <!-- helper dialog  -->
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- task   -->
+    <string name="task">Tasks</string>
+    <string name="apply">Apply</string>
+    <string name="date_text">10/05/2018</string>
+    <string name="completed">Completed</string>
+    <string name="recommended">Recommended</string>
+    <string name="upcoming">Upcoming</string>
+
+    <!-- invite friend   -->
+    <string name="select_all">Select All</string>
+    <string name="friend_name">Friend Name</string>
+    <string name="send">Send</string>
+    <string name="already_friend_text">This user is already your friend!</string>
+    <string name="pending_request">Your Friend Request is pending!</string>
+    <string name="select_one_frd">Please select friend to invite!</string>
+
+
+    <!-- edit profile  -->
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="man">Man</string>
+    <string name="women">Woman</string>
+    <string name="other">Other</string>
+    <string name="home_town">Home Town</string>
+    <string name="edit_profile">Edit Profile</string>
+
+
+    <!-- filter task  -->
+    <string name="enter_task_name">Enter Task Name</string>
+    <string name="max_distance">Max. Distance</string>
+    <string name="min_dis_text">0</string>
+    <string name="max_dis_text">100</string>
+    <string name="use_current_location">Use Your Current Location</string>
+    <string name="reset">Reset</string>
+    <string name="select_filter_option">Please select atleast one filter option</string>
+
+    <!-- filter task menu -->
+    <string name="newest">Newest</string>
+    <string name="date">Date</string>
+    <string name="distance">Distance</string>
+
+    <!-- task detail  -->
+    <string name="creator_name">Creator Name</string>
+    <string name="add_to_calendar">Add To Calendar</string>
+    <string name="photos">Photos</string>
+    <string name="date_time_text">23-05-2018,4:24:00 PM</string>
+    <string name="add_more">Add More</string>
+    <string name="comments">Comments</string>
+    <string name="write_comment">Write Comment</string>
+    <string name="favorite">Favourite</string>
+    <string name="message_counter">0</string>
+    <string name="message_text">Hiiii..</string>
+    <string name="share_on_fb">Share on Facebook</string>
+    <string name="start">Start:</string>
+    <string name="end">End:</string>
+    <string name="created_on">Created on:</string>
+    <string name="edit_time">Edit Time</string>
+    <string name="confirm_time">Confirm Time:</string>
+    <string name="confirmed">Confirmed Time:</string>
+
+
+    <!-- message  -->
+    <string name="message">Messages</string>
+    <string name="chat_text">Hello</string>
+    <string name="notification_text">Xyz sent you message</string>
+    <string name="toast_type_something">Type Something to send</string>
+    <string name="write_message">Write Message</string>
+
+
+    <!-- validation message -->
+    <string name="enter_first_name">Please enter first name</string>
+    <string name="enter_last_name">Please enter last name</string>
+    <string name="enter_email">Please enter email address</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_confirm_pass">Please enter confirm password</string>
+    <string name="enter_pass_confirm_pass">Password and confirm password must be same</string>
+    <string name="enter_about">Please enter About </string>
+    <string name="enter_birth_date">Please enter birth date</string>
+    <string name="enter_home_town">Please enter home town</string>
+    <string name="select_profile">Please select profile image</string>
+
+
+    <!-- add company validation message -->
+    <string name="enter_company_name">Please enter company name</string>
+    <string name="enter_location">Please enter location</string>
+    <string name="enter_website">Please enter website</string>
+    <string name="enter_description">Please enter description</string>
+    <string name="select_company_image">Please select company photo</string>
+    <string name="select_company_cat">Please select company category</string>
+
+
+    <!-- add task validation message  -->
+
+    <string name="enter_title">Please enter Title</string>
+    <string name="enter_number">Please enter No. of Helper</string>
+    <string name="enter_date_time">Please select Start Date Time</string>
+    <string name="enter_end_date_time">Please select End Date Time</string>
+
+    <string name="enter_date">Please select Start Date</string>
+    <string name="enter_end_date">Please select End Date</string>
+
+    <string name="enter_how_long">Please select how long</string>
+    <string name="enter_invite_friend">Please invite friends</string>
+    <string name="select_task_image">Please select Task photo</string>
+
+
+    <!--task detail commment-->
+    <string name="enter_comment">Please enter comment</string>
+
+    <!-- edit company  -->
+    <string name="edit_company">Edit Organisation</string>
+    <string name="update">Update</string>
+
+    <!-- edit task   -->
+    <string name="edit_task">Edit Task</string>
+
+
+    <!-- account varification  -->
+    <string name="account_vari_text">Please verify your account.You got verification link in mail.</string>
+    <string name="ok">Ok</string>
+
+    <string name="forgot_password_text">Forgot password</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="enter_toast_old_password">Please Enter Valid Old Password</string>
+    <string name="enter_toast_new_password">Please Enter Valid New Password</string>
+    <string name="enter_toast_confirm_password">Please Enter Valid Confirm Password</string>
+    <string name="confirm_password">Password not match with new Password.</string>
+
+    <string name="reset_password">Reset Password</string>
+
+
+    <!-- change password  -->
+    <string name="change_password">Change password</string>
+
+    <!-- delete task dialog   -->
+    <string name="delete_task_text">Are you sure you want to delete this task‭?</string>
+    <string name="delete_organisation_text">Are you sure you want to delete this organisation‭?</string>
+
+
+    <!-- edit task time dialog  -->
+    <string name="edit_task_time">Edit Task Time</string>
+    <string name="enter_time_text">Enter Time</string>
+    <string name="hours">Hours</string>
+    <string name="minute">Minute</string>
+
+    <!-- logout dialog   -->
+    <string name="logout_text">Are you sure you want to logout?</string>
+    <string name="sharesucces">Successfully Shared</string>
+    <string name="category">Category : </string>
+    <string name="cancel_request">Cancel Request</string>
+
+
+</resources>

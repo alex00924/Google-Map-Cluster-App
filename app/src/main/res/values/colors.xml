@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#1581FF</color>
+
+    <color name="splash_end_gradiant">#239FFF</color>
+
+    <color name="base_header_color">#1581FF</color>
+    <color name="white">#ffff</color>
+    <color name="base_bottom_color">#F3F4F6</color>
+    <color name="base_line_color">#E0E0E0</color>
+
+    <color name="login_edittext_color">#ECEFF1</color>
+    <color name="login_text_color">#C0C9D0</color>
+    <color name="forgot_pass_color">#429AFE</color>
+    <color name="button_shadow_color">#BBD9FD</color>
+    <color name="profile_border_color">#F5F5F5</color>
+
+    <color name="radio_text_color">#333333</color>
+    <color name="task_view_color">#EBEFF0</color>
+    <color name="gray">#6E767A</color>
+    <color name="red_color">#FE3030</color>
+    <color name="yellow_color">#D4AF00</color>
+    <color name="green_color">#92BF1E</color>
+    <color name="setting_text_color">#72777B</color>
+    <color name="setting_view_color">#F2F3F5</color>
+    <color name="invite_frd_text_color">#BFC9D1</color>
+    <color name="dark_green">#015C1F</color>
+    <color name="light_white">#FEFEFE</color>
+    <color name="range_bar_color">#CDD1D2</color>
+    <color name="black">#000000</color>
+
+    <color name="applied_text_color">#B96301</color>
+    <color name="fav_text_color">#DBBC2A</color>
+    <color name="recommend_text_color">#810076</color>
+    <color name="upcoming_text_color">#00A5B8</color>
+
+    <color name="chat_bg_blue">#DBECFF</color>
+    <color name="chat_bg_color">#EFEFEF</color>
+    <color name="white_smoke">#F2F3F5</color>
+
+
+</resources>

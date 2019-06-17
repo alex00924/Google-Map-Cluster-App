@@ -1,0 +1,59 @@
+=============================
+
+roland.dirnbacher@gmail.com
+Test123
+
+michi.eisenbock@gmail.com
+123456
+
+roland_1986@gmx.at 
+Test123
+
+==========================
+
+	Show all button 		->	show List
+	In one place, there are many	->	change the cluster color
+	
+Show the map at the current place
+Load data which are in the max distance	
+
+1. get the client pos using gps
+2. read data, which is in the position in the distance of Max distance from the current position,
+3. show the data in the map
+4. according to user's moving action, load data from server whith in the max distance.
+5. update the marker list information, and display it on map.
+
+url : 
+http://keshavinfotechdemo.com/KESHAV/KG2/ROL/webservices/all_task.php?user_id=7&auth_token=a1241b7941f7e6a24ee669987c57818d&latitude=33.985805&longitude=-118.25411166666666&search_text=&category=&max_distance=10000&currentlocation=1174%20E%2059th%20Pl,%20Los%20Angeles,%20CA%2090001,%20USA&sort_by=distance&start=10
+
+
+
+[2:22 AM] 14-02-64-SGS:
+http://keshavinfotechdemo.com/KESHAV/KG2/ROL/webservices/all_task.php?user_id=7&auth_token=a1241b7941f7e6a24ee669987c57818d&latitude=33.985805&longitude=-118.25411166666666&search_text=&category=&max_distance=10000&currentlocation=1174%20E%2059th%20Pl,%20Los%20Angeles,%20CA%2090001,%20USA&sort_by=distance&start=10
+[2:30 AM] MP-cik:
+http://keshavinfotechdemo.com/KESHAV/KG2/ROL/webservices/all_task.php?user_id=7&auth_token=a1241b7941f7e6a24ee669987c57818d&latitude=22.2942866&longitude=70.7907187&sort_by=distance&start=30&max_distance=1
+[2:31 AM] MP-cik:
+5
+	 points: zoom in at begin, 
+	right color and number,
+ double check,
+ load just from view and new when view moved, 
+but fix back button from map
+
+
+	1. zoom at first
+	2. applied effect
+	3. back button
+4. data load
+
+
+https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula
+
+
+
+-------------
+
+FriendProfile.java 150:
+MyTaskList.java 100:
+
+---------------

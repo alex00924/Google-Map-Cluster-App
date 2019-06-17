@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_one">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_30sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@mipmap/spalsh_round" />
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/app_text"
+                android:textColor="@color/splash_end_gradiant"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold"
+                app:customFont="Helvetica_light.ttf" />
+
+        </LinearLayout>
+
+
+        <com.rol.widgets.CustomEditText
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/login_edittext_color"
+            android:ellipsize="end"
+            android:hint="@string/email_add"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingBottom="@dimen/_13sdp"
+            android:text=""
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="@dimen/_11ssp"
+            app:customFontEditText="Helvetica_light.ttf" />
+
+
+        <com.rol.widgets.CustomEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/login_edittext_color"
+            android:ellipsize="end"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingBottom="@dimen/_13sdp"
+            android:text=""
+            android:textColor="@color/login_text_color"
+            android:textColorHint="@color/login_text_color"
+            android:textSize="@dimen/_11ssp"
+            app:customFontEditText="Helvetica_light.ttf" />
+
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/forgot_pass_color"
+            android:textSize="@dimen/_11ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+
+        <com.rol.widgets.CustomButton
+            android:id="@+id/login_btn"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@mipmap/btn_bg"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:customFontButton="Helvetica_light.ttf" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

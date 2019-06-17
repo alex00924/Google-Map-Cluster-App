@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTask">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/task_profile"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                app:civ_border_color="@color/profile_border_color"
+                app:civ_border_width="@dimen/_3sdp" />
+
+
+            <ImageView
+                android:id="@+id/edit_profile"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/task_profile"
+                android:layout_alignRight="@id/task_profile"
+                android:layout_marginTop="@dimen/_minus35sdp"
+                android:src="@mipmap/edit_icon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_minus5sdp">
+
+            <com.rol.widgets.CustomEditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/title"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_7sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFontEditText="Helvetica_light.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@id/title"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <com.rol.widgets.CustomTextView
+                android:id="@+id/select_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/login_edittext_color"
+                android:ellipsize="end"
+                android:hint="@string/select_company"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_7sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/_2sdp"
+                android:src="@mipmap/angle" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/login_edittext_color" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rol.widgets.CustomTextView
+                android:id="@+id/select_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/login_edittext_color"
+                android:ellipsize="end"
+                android:hint="@string/select_category"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_7sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/_2sdp"
+                android:src="@mipmap/angle" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/select_cat"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/login_edittext_color" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="Use Current Location"
+                android:imeOptions="actionNext"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+
+            <ToggleButton
+                android:id="@+id/current_location_switch"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/switch_selector"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/location"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/login_edittext_color" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rol.widgets.CustomTextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/current_location"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/location"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <ImageView
+                android:id="@+id/current_location"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:src="@mipmap/gps_icon"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@id/location"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/select_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:hint="Select Task Date and Time"
+                android:paddingBottom="@dimen/_7sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <ImageView
+                android:id="@+id/down_arrow"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/_2sdp"
+                android:rotation="270"
+                android:src="@mipmap/angle" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/login_edittext_color" />
+
+
+        <LinearLayout
+            android:id="@+id/flexible_time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rol.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:hint="Choose flexible time"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="@dimen/_11ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+                <ToggleButton
+                    android:id="@+id/flexible_date_switch"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/switch_selector"
+                    android:textOff=" "
+                    android:textOn=" " />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+
+            <RelativeLayout
+                android:id="@+id/select_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rol.widgets.CustomTextView
+                    android:id="@+id/select_date_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:hint="@string/select_date_time"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="@dimen/_11ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+                <ImageView
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:src="@mipmap/watch" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+
+            <RelativeLayout
+                android:id="@+id/select_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rol.widgets.CustomTextView
+                    android:id="@+id/select_end_date_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:hint="@string/select_end_date_time"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:textColor="@color/login_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="@dimen/_11ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+                <ImageView
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:src="@mipmap/watch" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/login_edittext_color" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:text="@string/visible_for"
+                android:textColor="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <RadioGroup
+                android:id="@+id/visibility_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/visible_everyone_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/addtask_radiobtn_selector"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="left|center"
+                    android:text="@string/everyone"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="@dimen/_10ssp" />
+
+                <RadioButton
+                    android:id="@+id/invited_frds_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/addtask_radiobtn_selector"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="left|center"
+                    android:text="@string/invited_friends"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="@dimen/_10ssp" />
+
+                <RadioButton
+                    android:id="@+id/friends_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/addtask_radiobtn_selector"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="left|center"
+                    android:text="@string/friends"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="@dimen/_10ssp" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/task_view_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:text="@string/confirm_helper_text"
+                android:textColor="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <RadioGroup
+                android:id="@+id/applied_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/addtask_radiobtn_selector"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="left|center"
+                    android:text="@string/yes_text"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="@dimen/_10ssp" />
+
+                <RadioButton
+                    android:id="@+id/no_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/addtask_radiobtn_selector"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="left|center"
+                    android:text="@string/no_text"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="@dimen/_10ssp" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/task_view_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rol.widgets.CustomEditText
+                android:id="@+id/max_no_helper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/max_no_helper"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_7sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFontEditText="Helvetica_light.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@id/max_no_helper"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rol.widgets.CustomTextView
+                android:id="@+id/invite_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:hint="@string/invite_friend"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_7sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/_2sdp"
+                android:src="@mipmap/angle" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/login_edittext_color" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rol.widgets.CustomEditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/description"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:paddingBottom="@dimen/_7sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFontEditText="Helvetica_light.ttf" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@id/description"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@color/login_edittext_color" />
+
+        </RelativeLayout>
+
+
+        <com.rol.widgets.CustomButton
+            android:id="@+id/update_btn"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@mipmap/btn_bg"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:customFontButton="Helvetica_light.ttf" />
+
+
+    </LinearLayout>
+</ScrollView>

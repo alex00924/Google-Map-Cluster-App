@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_one"
+    tools:context=".Register">
+
+    <!-- <ScrollView
+         android:fillViewport="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/base_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@color/base_header_color">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@mipmap/back_arrow" />
+
+            <com.rol.widgets.CustomTextView
+                android:id="@+id/base_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:customFont="ArialRounded_Bold.ttf" />
+
+            <ImageView
+                android:id="@+id/share_btn"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@mipmap/share"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/main_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/setting_btn"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:src="@mipmap/setting" />
+
+
+                <ImageView
+                    android:id="@+id/search_btn"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:src="@mipmap/search" />
+
+
+                <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:src="@mipmap/add_task" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:clickable="true"
+            android:duplicateParentState="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/profile"
+            app:civ_border_color="@color/profile_border_color"
+            app:civ_border_width="@dimen/_1sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:orientation="vertical">
+
+            <com.rol.widgets.CustomEditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/login_edittext_color"
+                android:ellipsize="end"
+                android:hint="@string/first_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_13sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFontEditText="Helvetica_light.ttf" />
+
+            <com.rol.widgets.CustomEditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/login_edittext_color"
+                android:ellipsize="end"
+                android:hint="@string/last_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_13sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFontEditText="Helvetica_light.ttf" />
+
+
+            <com.rol.widgets.CustomEditText
+                android:id="@+id/email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/login_edittext_color"
+                android:ellipsize="end"
+                android:hint="@string/email_add"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_13sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFontEditText="Helvetica_light.ttf" />
+
+            <com.rol.widgets.CustomEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/login_edittext_color"
+                android:ellipsize="end"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_13sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFontEditText="Helvetica_light.ttf" />
+
+            <com.rol.widgets.CustomEditText
+                android:id="@+id/confirm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/login_edittext_color"
+                android:ellipsize="end"
+                android:hint="@string/confirm_pass"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:paddingBottom="@dimen/_13sdp"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFontEditText="Helvetica_light.ttf" />
+
+
+            <com.rol.widgets.CustomButton
+                android:id="@+id/register_btn"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@mipmap/btn_bg"
+                android:gravity="center"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:customFontButton="Helvetica_light.ttf" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--
+        </ScrollView>
+    -->
+</LinearLayout>

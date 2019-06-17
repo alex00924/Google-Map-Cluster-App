@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:orientation="vertical">
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/no_data_available"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:text="sorry_no_data_available"/>
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp">
+
+                    <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/img_progress_bar"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:theme="@style/AppTheme" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/friend_profile"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        app:civ_border_color="@color/profile_border_color"
+                        app:civ_border_width="@dimen/_2sdp" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <com.rol.widgets.CustomTextView
+                            android:id="@+id/gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/radio_text_color"
+                            android:textSize="@dimen/_11ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+
+                        <com.rol.widgets.CustomTextView
+                            android:id="@+id/age_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:textColor="@color/radio_text_color"
+                            android:textSize="@dimen/_11ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+
+                        <com.rol.widgets.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/total_hours"
+                            android:textColor="@color/radio_text_color"
+                            android:textSize="@dimen/_11ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+                        <com.rol.widgets.CustomTextView
+                            android:id="@+id/total_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:textColor="@color/radio_text_color"
+                            android:textSize="@dimen/_11ssp"
+                            app:customFont="Helvetica_light.ttf" />
+
+
+                    </LinearLayout>
+
+                    <com.rol.widgets.CustomButton
+                        android:id="@+id/add_friend"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:background="@mipmap/squar_btn"
+                        android:gravity="center"
+                        android:text="@string/add_friend"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone"
+                        app:customFontButton="Helvetica_light.ttf" />
+
+                    <com.rol.widgets.CustomButton
+                        android:id="@+id/pending_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:background="@mipmap/squar_btn"
+                        android:gravity="center"
+                        android:text="@string/pending"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone"
+                        app:customFontButton="Helvetica_light.ttf" />
+
+
+                    <com.rol.widgets.CustomButton
+                        android:id="@+id/cancel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:background="@mipmap/squar_btn"
+                        android:gravity="center"
+                        android:text="@string/cancel_request"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone"
+                        app:customFontButton="Helvetica_light.ttf" />
+
+
+                    <com.rol.widgets.CustomButton
+                        android:id="@+id/accept_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:background="@mipmap/squar_btn"
+                        android:gravity="center"
+                        android:text="@string/accept"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone"
+                        app:customFontButton="Helvetica_light.ttf" />
+
+                    <com.rol.widgets.CustomButton
+                        android:id="@+id/reject_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:background="@mipmap/squar_btn"
+                        android:gravity="center"
+                        android:text="@string/reject"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone"
+                        app:customFontButton="Helvetica_light.ttf" />
+
+
+                    <com.rol.widgets.CustomButton
+                        android:id="@+id/remove_friend_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:background="@mipmap/squar_btn"
+                        android:gravity="center"
+                        android:text="@string/remove_friend"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone"
+                        app:customFontButton="Helvetica_light.ttf" />
+
+
+                    <com.rol.widgets.CustomButton
+                        android:id="@+id/send_msg_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_48sdp"
+                        android:background="@mipmap/squar_btn"
+                        android:gravity="center"
+                        android:text="@string/send_msg"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        android:visibility="gone"
+                        app:customFontButton="Helvetica_light.ttf" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.rol.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/about_me"
+                    android:textColor="@color/base_header_color"
+                    android:textSize="@dimen/_14ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+                <com.rol.widgets.CustomTextView
+                    android:id="@+id/about_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/radio_text_color"
+                    android:textSize="@dimen/_13ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/upcoming_task"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:background="@color/base_bottom_color"
+                android:visibility="gone">
+
+                <com.rol.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/upcoming_task"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="@dimen/_11ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@mipmap/angle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/completed_task"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@color/base_bottom_color"
+                android:visibility="gone">
+
+                <com.rol.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/completed_task"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="@dimen/_11ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@mipmap/angle" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+
+                    <com.rol.widgets.CustomTextView
+                        android:id="@+id/total_friend_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:textColor="@color/base_header_color"
+                        android:textSize="@dimen/_13ssp"
+                        app:customFont="Helvetica_light.ttf" />
+
+                    <com.rol.widgets.CustomTextView
+                        android:id="@+id/friend_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/friends"
+                        android:textColor="@color/base_header_color"
+                        android:textSize="@dimen/_13ssp"
+                        app:customFont="Helvetica_light.ttf" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/friends_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <com.rol.widgets.CustomButton
+            android:id="@+id/block_user_btn"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@mipmap/squar_btn"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/block_this_user"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:customFontButton="Helvetica_light.ttf" />
+
+        <com.rol.widgets.CustomButton
+            android:id="@+id/unblock_user_btn"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@mipmap/squar_btn"
+            android:gravity="center"
+            android:text="@string/unblock_user"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            app:customFontButton="Helvetica_light.ttf" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:animateLayoutChanges="true"
+            android:background="@color/base_bottom_color"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/base_header_color"
+            app:tabIndicatorHeight="@dimen/_1sdp"
+            app:tabMode="fixed" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginBottom="@dimen/_30sdp" />
+
+
+        <!--
+                    <com.rol.utils.CustomViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </com.rol.utils.CustomViewPager>
+        -->
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/_10sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@mipmap/profile" />
+
+    <LinearLayout
+        android:id="@+id/hours_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/edit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="@string/edit_time"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            app:customFont="Helvetica_light.ttf" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rol.widgets.CustomTextView
+                android:id="@+id/confirm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/_3sdp"
+                android:text="@string/confirm_time"
+                android:textColor="@color/base_header_color"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="gone"
+                app:customFont="Helvetica_light.ttf" />
+
+            <com.rol.widgets.CustomTextView
+                android:id="@+id/task_taken_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:text="4:30"
+                android:textColor="@color/base_header_color"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="gone"
+                app:customFont="Helvetica_light.ttf" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

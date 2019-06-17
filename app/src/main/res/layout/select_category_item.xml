@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relative_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/base_bottom_color"
+        android:padding="@dimen/_12sdp">
+
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="@string/category_name"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_13ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+
+        <!--<RadioButton
+            android:id="@+id/select_category_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_category_radiobtn_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="left"
+            android:textSize="@dimen/_10ssp" />-->
+        <RadioButton
+            android:id="@+id/select_category_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/select_category_radiobtn_selector"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="@color/radio_text_color"
+            android:textSize="@dimen/_10ssp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

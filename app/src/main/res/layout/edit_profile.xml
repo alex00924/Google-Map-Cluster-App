@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/profile"
+                app:civ_border_color="@color/profile_border_color"
+                app:civ_border_width="@dimen/_4sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical">
+
+
+                <com.rol.widgets.CustomButton
+                    android:id="@+id/my_task_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@mipmap/squar_btn"
+                    android:gravity="center"
+                    android:text="@string/my_task"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontButton="Helvetica_light.ttf" />
+
+
+                <com.rol.widgets.CustomButton
+                    android:id="@+id/general_setting_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@mipmap/squar_btn"
+                    android:gravity="center"
+                    android:text="@string/general_settings"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontButton="Helvetica_light.ttf" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rol.widgets.CustomEditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/imageedit"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="@string/first_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/radio_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Helvetica_light.ttf" />
+
+                <ImageView
+                    android:id="@+id/imageedit"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:src="@mipmap/edit_ic_blue" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rol.widgets.CustomEditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/imglst"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="@string/last_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/radio_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Helvetica_light.ttf" />
+
+                <ImageView
+                    android:id="@+id/imglst"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:src="@mipmap/edit_ic_blue" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rol.widgets.CustomEditText
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/edit_img"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="@string/about"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="@dimen/_40sdp"
+                    android:textColor="@color/radio_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Helvetica_light.ttf" />
+
+
+                <ImageView
+                    android:id="@+id/edit_img"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:src="@mipmap/edit_ic_blue" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rol.widgets.CustomEditText
+                    android:id="@+id/date_of_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="@string/date_of_birth"
+                    android:imeOptions="actionNext"
+                    android:inputType="date"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/radio_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Helvetica_light.ttf" />
+
+                <ImageView
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:src="@mipmap/edit_ic_blue" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <com.rol.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="@string/gender"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Helvetica_light.ttf" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/men"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_6sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableRight="@drawable/setting_radiobtn_selector"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:gravity="left|center"
+                            android:text="@string/man"
+                            android:textColor="@color/radio_text_color"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <RadioButton
+                            android:id="@+id/women"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_6sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:button="@null"
+                            android:drawableRight="@drawable/setting_radiobtn_selector"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:gravity="left|center"
+                            android:text="@string/women"
+                            android:textColor="@color/radio_text_color"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <RadioButton
+                            android:id="@+id/other"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:button="@null"
+                            android:drawableRight="@drawable/setting_radiobtn_selector"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:gravity="left|center"
+                            android:text="@string/other"
+                            android:textColor="@color/radio_text_color"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rol.widgets.CustomEditText
+                    android:id="@+id/home_town"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/imghome"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="@string/home_town"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/radio_text_color"
+                    android:textColorHint="@color/login_text_color"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Helvetica_light.ttf" />
+
+                <ImageView
+                    android:id="@+id/imghome"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:src="@mipmap/edit_ic_blue" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/login_edittext_color" />
+
+
+        </LinearLayout>
+
+
+        <com.rol.widgets.CustomButton
+            android:id="@+id/edit_profile_btn"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@mipmap/btn_bg"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:customFontButton="Helvetica_light.ttf" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+

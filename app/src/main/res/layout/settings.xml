@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.rol.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_12sdp"
+            android:text="@string/notification"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/application_confirmed"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <ToggleButton
+                android:id="@+id/application_confirm_switch"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/switch_selector"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/new_friend_request"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <ToggleButton
+                android:id="@+id/new_frd_request_switch"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/switch_selector"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/friend_request_confirmed"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <ToggleButton
+                android:id="@+id/frd_request_confirm_switch"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/switch_selector"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/new_message"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <ToggleButton
+                android:id="@+id/new_msg_switch"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/switch_selector"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/new_recommended_task"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <ToggleButton
+                android:id="@+id/new_recomm_task_switch"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/switch_selector"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/task_cancelled"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <ToggleButton
+                android:id="@+id/task_cancelled_switch"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/switch_selector"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/new_task_favorited_profile"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <ToggleButton
+                android:id="@+id/new_task_favorite_switch"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/switch_selector"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </RelativeLayout>
+
+
+        <com.rol.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_12sdp"
+            android:text="@string/privacy_settings"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/my_picture"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:id="@+id/my_picture_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/me_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/me"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <RadioButton
+                        android:id="@+id/frds_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/friends"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <RadioButton
+                        android:id="@+id/everyone_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/everyone"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/my_task"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:id="@+id/my_task_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/task_me_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/me"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <RadioButton
+                        android:id="@+id/task_frds_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/friends"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <RadioButton
+                        android:id="@+id/task_everyone_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/everyone"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/profile_info"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:id="@+id/my_profile_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/my_profile_info_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/me"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <RadioButton
+                        android:id="@+id/profile_info_frds_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text="@string/friends"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <RadioButton
+                        android:id="@+id/my_profile_info_everyone_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text="@string/everyone"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@color/base_bottom_color">
+
+            <com.rol.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/my_friend_list"
+                android:textColor="@color/setting_text_color"
+                android:textSize="@dimen/_11ssp"
+                app:customFont="Helvetica_light.ttf" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:id="@+id/my_frd_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/my_frd_list_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/me"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <RadioButton
+                        android:id="@+id/my_frdlist_frds_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/friends"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <RadioButton
+                        android:id="@+id/my_frdlist_everyone_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/setting_radiobtn_selector"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="left|center"
+                        android:text="@string/everyone"
+                        android:textColor="@color/radio_text_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/change_password"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/setting_view_color" />
+
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/help"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/setting_view_color" />
+
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/feedback"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/setting_view_color" />
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/terms_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/terms_condition_setting"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/setting_view_color" />
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/setting_view_color" />
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/imprint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/imprint"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/setting_view_color" />
+
+        <com.rol.widgets.CustomTextView
+            android:id="@+id/rate_review_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/rate_review_app"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/setting_view_color" />
+
+
+        <com.rol.widgets.CustomButton
+            android:id="@+id/delete_profile"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@mipmap/btn_bg"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/delete_profile"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:customFontButton="Helvetica_light.ttf" />
+
+
+        <com.rol.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/app_version"
+            android:textColor="@color/base_header_color"
+            android:textSize="@dimen/_12ssp"
+            app:customFont="Helvetica_light.ttf" />
+
+
+    </LinearLayout>
+
+</ScrollView>
